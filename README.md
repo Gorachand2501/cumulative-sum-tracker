@@ -10,9 +10,9 @@ A full-stack web application built with **React**, **FastAPI**, and **PostgreSQL
 
 ```
 screenshots/
-├── home.png
-├── chart.png
-└── swagger.png
+├── ss1.png
+├── ss2.png
+└── ss3.png
 ```
 
 ---
