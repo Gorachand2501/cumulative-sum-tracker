@@ -6,14 +6,12 @@ A full-stack web application built with **React**, **FastAPI**, and **PostgreSQL
 
 ## Demo
 
-> Add screenshots or a GIF here after uploading them.
+![Home](Screenshots/ss1.png)
 
-```
-screenshots/
-├── ss1.png
-├── ss2.png
-└── ss3.png
-```
+![Table](Screenshots/ss2.png)
+
+![Chart before](Screenshots/ss3.png)
+![Chart after](Screenshots/ss4.png)
 
 ---
 
