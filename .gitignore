@@ -1,0 +1,81 @@
+# =========================================
+# Frontend
+# =========================================
+
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment files
+frontend/*.local
+
+# =========================================
+# Backend
+# =========================================
+
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/.pytest_cache/
+backend/.mypy_cache/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+
+# =========================================
+# IDEs
+# =========================================
+
+.vscode/
+.idea/
+
+# =========================================
+# Operating System
+# =========================================
+
+.DS_Store
+
+# =========================================
+# Misc
+# =========================================
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?# ==========================
+# Frontend
+# ==========================
+
+frontend/node_modules/
+frontend/dist/
+
+# ==========================
+# Backend
+# ==========================
+
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/.pytest_cache/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
