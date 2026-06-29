@@ -1,0 +1,27 @@
+.sum-card {
+  margin: 40px 0;
+
+  background: #effdf5;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.sum-card h2 {
+  color: #64748b;
+
+  margin-bottom: 10px;
+}
+
+.sum-card p {
+  color: #16a34a;
+
+  font-size: 56px;
+
+  font-weight: bold;
+}

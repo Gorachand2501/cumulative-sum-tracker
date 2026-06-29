@@ -1,0 +1,39 @@
+.history-title {
+  margin-bottom: 20px;
+
+  color: #1f2937;
+
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+thead {
+  background: #4f46e5;
+
+  color: white;
+}
+
+th {
+  padding: 16px;
+}
+
+td {
+  padding: 15px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+tbody tr:hover {
+  background: #eef2ff;
+}

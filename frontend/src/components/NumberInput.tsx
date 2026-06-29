@@ -1,3 +1,5 @@
+import "./NumberInput.css";
+
 type NumberInputProps = {
   number: string;
   error: string;
@@ -14,7 +16,7 @@ function NumberInput({
   handleSubmit,
 }: NumberInputProps) {
   return (
-    <div>
+    <div className="input-wrapper">
       <input
         type="number"
         placeholder="Enter a number (0-99)"
@@ -25,14 +27,11 @@ function NumberInput({
         }}
       />
 
-      <button
-        onClick={handleSubmit}
-        disabled={number.trim() === ""}
-      >
+      <button onClick={handleSubmit} disabled={number.trim() === ""}>
         Submit
       </button>
 
-      {error && <p>{error}</p>}
+      {error && <p className="error">{error}</p>}
     </div>
   );
 }

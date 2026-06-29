@@ -1,3 +1,4 @@
+import "./HistoryTable.css";
 import type { HistoryRecord } from "../types.ts";
 
 type HistoryTableProps = {
@@ -7,7 +8,7 @@ type HistoryTableProps = {
 function HistoryTable({ history }: HistoryTableProps) {
   return (
     <div>
-      <h2>History</h2>
+      <h2 className="history-title">History</h2>
 
       <table border={1}>
         <thead>
@@ -15,6 +16,7 @@ function HistoryTable({ history }: HistoryTableProps) {
             <th>ID</th>
             <th>Value</th>
             <th>Running Sum</th>
+            <th>Timestamp</th>
           </tr>
         </thead>
 
@@ -24,6 +26,7 @@ function HistoryTable({ history }: HistoryTableProps) {
               <td>{record.id}</td>
               <td>{record.value}</td>
               <td>{record.cumulative_sum}</td>
+              <td>{new Date(record.created_at).toLocaleString()}</td>
             </tr>
           ))}
         </tbody>

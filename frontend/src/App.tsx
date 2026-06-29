@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-
 import "./App.css";
 
 import NumberInput from "./components/NumberInput";
 import CurrentSum from "./components/CurrentSum";
 import HistoryTable from "./components/HistoryTable";
+import ChartView from "./components/ChartView";
 
 import { getNumbers, getSum, addNumber } from "./api/api";
 
@@ -51,20 +51,28 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app-container">
       <h1>Cumulative Sum Tracker</h1>
 
-      <NumberInput
-        number={number}
-        error={error}
-        setNumber={setNumber}
-        setError={setError}
-        handleSubmit={handleSubmit}
-      />
+      <p className="subtitle">
+        Enter a number between 0 and 99 to add to the cumulative sum
+      </p>
+
+      <div className="input-section">
+        <NumberInput
+          number={number}
+          error={error}
+          setNumber={setNumber}
+          setError={setError}
+          handleSubmit={handleSubmit}
+        />
+      </div>
 
       <CurrentSum sum={currentSum} />
 
       <HistoryTable history={history} />
+
+      <ChartView history={history} />
     </div>
   );
 }
